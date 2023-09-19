@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ministério da Educação</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css">
+
+    <script defer src="script.js"></script>
+</head>
+<body>
+    <header>
+        <img src="govbr-logo-large.png" alt="Logo gov">
+        <p class="text-img">Ministério da Educação</p>
+    </header>
+    
+    <div class="container" id="login-form">
+        <h2>Entrar</h2>
+        <input type="text" placeholder="Usuário">
+        <input type="password" placeholder="Senha">
+        <button onclick="showSearchBar()">Entrar</button>
+        <div id="forgot-password">
+            <a href="#">Esqueci minha senha</a>
+        </div>
+        <div id="signup-link">
+            <a href="#" onclick="showSignupForm()">Cadastre-se</a>
+        </div>
+    </div>
+
+    <div class="container" id="signup-form">
+        <h2>Cadastro</h2>
+        <input type="text" placeholder="Nome Completo">
+        <input type="text" placeholder="CPF">
+        <input type="password" placeholder="Senha">
+        <button onclick="showLoginForm()">Concluir</button>
+    </div>
+
+    <div class="container" id="search-bar">
+        <h2>Qual sua dúvida?</h2>
+        <input type="text" placeholder="Cursos Técnologia no Brasil">
+        <button onclick="showMap()">Pesquisar</button>
+    </div>
+
+    <div id="map" style="display: none; cursor: pointer;">
+        <h2>Escolha uma região</h2>
+        <img src="atividade-de-mapa-do-brasil.jpg" alt="Imagem Mapa" width="400" onclick="showScreen()">
+        <a href="#" onclick="showSearchBar()"> <i class="fa fa-arrow-left"></i></a>
+        
+    </div>
+
+    <div id="info-screen" style="display: none;">
+        
+        <h2>Melhores faculdades de técnologia do Brasil </h2>
+        <ul>
+            <li>...</li>
+            <li>...</li>
+            <li>...</li>
+            <li>...</li>
+            <li>...</li>
+        </ul>
+        
+    </div>
+    
+
+
+    <div id="return-arrow" style="display: none;">
+        <!--Setinha foi inserida para retorno--> 
+        <a href="#" onclick="showSearchBar()"><i class="fa fa-arrow-left"></i></a>
+    </div>
+  
+</body>
+</html>
