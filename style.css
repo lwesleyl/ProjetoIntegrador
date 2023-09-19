@@ -66,14 +66,14 @@ button {
     display: none;
 }
 #map {
-    text-align: center; /* Centralizar horizontalmente */
+    text-align: center;
     display: none;
     
 }
 
 #return-arrow {
     display: none;
-    margin-top: 10px; /* Adiciona espaço acima da seta */
+    margin-top: 10px;
 }
 
 
